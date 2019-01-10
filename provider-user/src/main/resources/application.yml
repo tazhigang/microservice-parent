@@ -23,6 +23,6 @@ logging:                                # 配置日志级别，让hibernate打�
 eureka:
   client:
     service-url: #http://localhost:8761/eureka/ 是将服务注册到没有用户认证的eureka
-      defaultZone: http://user:password123@localhost:8761/eureka/ #是将服务注册到有用户认证的eureka上
+      defaultZone: http://admin:admin123@localhost:8761/eureka/ #是将服务注册到有用户认证的eureka上
   instance:
     prefer-ip-address: true
