@@ -24,6 +24,7 @@
         <module>provider-user</module>
         <module>discover-eureka</module>
         <module>consumer-movie</module>
+        <module>discover-eureka-ha</module>
     </modules>
     <dependencyManagement>
         <dependencies>
