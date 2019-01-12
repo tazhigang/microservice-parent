@@ -27,7 +27,7 @@ public class UserController {
     public User findById(@PathVariable Long id, HttpServletRequest request){
         String remoteHost = request.getRemoteHost();
         int remotePort = request.getRemotePort();
-        log.info("{}/:{}",remoteHost,remotePort);
+        log.info("{}:{}",remoteHost,remotePort);
         return userService.queryOne(id);
     }
 }
