@@ -25,6 +25,7 @@
         <module>discover-eureka</module>
         <module>consumer-movie</module>
         <module>discover-eureka-ha</module>
+        <module>consumer-movie-ribbon</module>
     </modules>
     <dependencyManagement>
         <dependencies>
