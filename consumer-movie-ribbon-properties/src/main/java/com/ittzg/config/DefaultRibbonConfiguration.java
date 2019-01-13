@@ -1,8 +1,7 @@
-package com.ittzg.cloud.config;
+package com.ittzg.config;
 
 import com.netflix.client.config.IClientConfig;
 import com.netflix.loadbalancer.*;
-import com.netflix.ribbon.Ribbon;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -13,6 +12,7 @@ import org.springframework.context.annotation.Configuration;
  * @Description:
  */
 @Configuration
+@SuppressWarnings("all")
 public class DefaultRibbonConfiguration {
     @Bean
     public IRule ribbonRule(){
@@ -23,10 +23,10 @@ public class DefaultRibbonConfiguration {
     public IPing ribbinIp(){
         return new PingUrl();
     }
-//    @Bean
-//    public ServerList<Server> ribbonServerList(IClientConfig config){
-//        return new RibbonClientDefaultConfigurationTestConfig.BazServiceList(config);
-//    }
+    @Bean
+    public ServerList<Server> ribbonServerList(IClientConfig config){
+        return new RibbonClientDefaultConfigurationTestConfig.BazServiceList(config);
+    }
     @Bean
     public ServerListFilter serverListFilter(){
         return new ServerListSubsetFilter();

@@ -28,6 +28,7 @@
         <module>consumer-movie-ribbon</module>
         <module>consumer-movie-ribbon-customizing</module>
         <module>consumer-movie-ribbon-properties</module>
+		<module>consumer-movie-feign-customizing</module>
     </modules>
     <dependencyManagement>
         <dependencies>
